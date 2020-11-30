@@ -1,45 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            position: relative;
+            left: 0px;
+            padding: 0px;
+        }
+
+        ul li {
+            margin-left: 0px;
+        }
+
+        ul.span2 {
+            display: inline-block;
+            width: 100px;
+            text-align: right;
+        }
+
+        ul > li > .span3 {
+            position: relative;
+            left: -100px;
+        }
+
+        .ul > li {
+            display: inline;
+        }
+
+        .ul2 {
+            width: 500px;
+        }
+
+        .ul2 > li {
+            float: right;
+            list-style: none;
+            margin-right: 10px;
+        }
+    </style>
 </head>
 <body>
-	<body>
-		<div style="font-size: 62.5%">
-		<div id="div1" style="float: left;font-size: 0.5em">div1</div>
-		<div id="div2" style="float: right;font-size: 1rem">div2</div>
-		<div id="div3" style="float: left;">div3</div>
-		<h1 id="h1">h1</h1>
-		</div>
-		<div>
-			<div id="div10" style="position: absolute;left: 100px;">div10</div>
-			<div id="div11" sytle="width:100px">div11</div>
-			<div id="div12" style="position: relative;width: 100px;height: 30px;left: 100px">div12
-              <div id="div13" style="position: absolute;;left: 100px;top:20px">div13</div>
-			</div>
-		</div>
-		<div>
-			<div id="div21" style="float: left;margin-right: 10px">div21</div>
-			<div id="div22" style="float: left;margin-left: 10px;">div22</div>
-		</div>
-		<div style="clear: both"></div>
-		<img src="" alt="">
-		<ul class="ul1">
-			<li></li>
-			<li></li>
-		</ul>
-		<ul class="ul2">
-			<li>
-				li21
-				<span>span1</span>
-				<span class="span2">span2</span>
-				<span class="span3">span3</span>
-			</li>
-			<li>li22</li>
-		</ul>
-	</body>
-	
+<body>
+<div style="font-size: 62.5%">
+    <div id="div1" style="float: left;font-size: 0.5em">div1</div>
+    <div id="div2" style="float: right;font-size: 1rem">div2</div>
+    <div id="div3" style="float: left;">div3</div>
+    <h1 id="h1">h1</h1>
+</div>
+<div>
+    <div id="div10" style="position: absolute;left: 100px;">div10</div>
+    <div id="div11" sytle="width:100px">div11</div>
+    <div id="div12" style="position: relative;width: 100px;height: 30px;left: 100px">div12
+        <div id="div13" style="position: absolute;;left: 100px;top:20px">div13</div>
+    </div>
+</div>
+<div>
+    <div id="div21" style="float: left;margin-right: 10px">div21</div>
+    <div id="div22" style="float: left;margin-left: 10px;">div22</div>
+</div>
+<div style="clear: both"></div>
+<img src="" alt="">
+<ul class="ul1">
+    <li></li>
+    <li></li>
+</ul>
+<ul class="ul2">
+    <li>
+        li21
+        <span>span1</span>
+        <span class="span2">span2</span>
+        <span class="span3">span3</span>
+    </li>
+    <li>li22</li>
+</ul>
+</body>
+
 </body>
 </html>
